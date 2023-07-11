@@ -19,7 +19,7 @@ To run our application, download the source code. After that, in your terminal, 
 
 The application and database are deployed and hosted using Digital Ocean platfom. Click on the link below to visit it.
 
-- 🟢https://starfish-app-fd6z8.ondigitalocean.app/ 
+- 🟢https://sneaker-shop-nine.vercel.app/#home
 
 ## 🚀 About Authors
 If you have any questions, do not hesitate to ask us. You can reach us using the links provided below. Kudos!👋
