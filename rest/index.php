@@ -60,10 +60,11 @@ Flight::route('/*', function () {
   
 
 Flight::route('GET /docs.json', function(){
-    $openapi = \OpenApi\scan('routes');
-    header('Content-Type: application/json');
-    echo $openapi->toJson();
+    $openapi = \OpenApi\scan(['routes']);
+    Flight::response()->header('Content-Type', 'application/json');
+    Flight::response()->write($openapi->toJson());
 });
+
 
 Flight::start();
 

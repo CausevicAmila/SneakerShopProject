@@ -33,7 +33,7 @@ Flight::route('POST /login', function(){
         $user = $user[0];
     }
     if (isset($user['id'])){
-      if($user['password'] == md5($login['password'])){
+      if($user['password'] == ($login['password'])){
         unset($user['password']);
         $user['is_admin'] = false;
         $jwt = JWT::encode($user, Config::JWT_SECRET(), 'HS256');
